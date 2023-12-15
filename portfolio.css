@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: #080808;
+    color:#fff;
+    }
+ #header{
+    width:100%;
+    height:100vh;
+    background-image:url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+    .container{
+        padding:10px 10%;
+    }
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo{
+     margin-left: 0%;
+        width:140px;
+
+    }
+    nav ul li{
+        display:inline-block;
+        list-style: none;
+        margin:10px 20px;
+
+    }
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-size: 18px;
+        position:relative;
+       
+
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background:#ff004f;
+        position:absolute;
+        left:0;
+        bottom:-6px;
+        transition: 0.5sc;
+
+    }
+    nav ul li a:hover::after{
+        width:100%;
+    }
+    .header-text h1{
+       font-size:50px;
+       margin-top:60px;
+    }
+    #about{
+      padding:20px 20px;
+     
+      }
+    #about h1{
+        color:#f88a87;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+       margin-top:30px;
+    }
+    #about h4{
+       text-align: center;
+       font-family: "palatino","Book Antiqua",Palatino,Serif;
+       padding: 30px;
+    }
+ #skills{
+    width:90%;
+    height:10px;
+    background:#fff;
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+    display:flex;
+ }
+
+ 
+ .box{
+    width: 250px;
+    height: 150px;
+    background-color: #df5f5a;
+    margin:0px 10px;
+    margin-bottom: 50px;
+    transition: 1s;
+    display: flex;
+    border-radius: 10%;
+
+ }
+ .box:hover{
+    transform: scale(1.3);
+    background: #ba5157;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+ }
+ #skills h1{
+   color:#df5f5a
+ }
+ .box h3{
+    text-align: center;
+    padding-top: 70px;
+   
+    justify-content: center;
+ }
+ #footercontainer{
+    width:100%;
+    padding: 70px 30px 20px;
+ }
+ .socialicons{
+    display: flex;
+    justify-content: center;
+ }
+ .socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:white;
+    margin:10px;
+    border-radius: 50%;
+ }
+ .socialicons a i{
+    font-size:2em;
+    color:rgb(27, 26, 26);
+    opacity: 0.9;
+ }
+ #footercontainer h1{
+    color:white;
+   text-align: center;
+   text-decoration: underline;
+ }
+ .socialicons a:hover{
+    background-color: #df5f5a;
+    transition:1.2s;
+ }
+ /* mobile version */
+ @media  only screen and (max-width: 600px) {
+      #header{
+      width: 550px;;
+      height:80vh;
+      background-size: 800px;
+      background-repeat: no-repeat;
+       }
+      .logo{
+         margin-left: 35%;
+          width:140px;
+      }
+      nav ul li{
+         margin-left: 30px;
+      }
+      .header-text h1{
+         font-size:35px;
+         margin-top:110px;
+      }
+       
+   #skills{
+      width:50%;
+      margin:100px auto;
+      display: flex;
+      justify-content: center;
+      display:flex;
+   }
+   #skills h1{
+      padding-left: 80%;
+    }
+   .box{
+      width: 48%;
+      height: 120px;
+      margin:0px 10px;
+      margin-bottom: 50px;
+      border-radius: 10%;
+   }
+}
+   
+/* tablet version */
+@media  only screen and (max-width: 800px) {
+  body{
+   width: fit-content;
+  }
+   #header{
+   width:768px;
+   height:80vh;
+   background-size: 1000px;
+   background-repeat: no-repeat;
+    }
+   .logo{
+      margin-left: 35%;
+       width:140px;
+   }
+   nav ul li{
+      margin-left: 65px;
+   }
+   .header-text h1{
+      font-size:35px;
+      margin-top:168px;
+   }
+    
+#skills{
+   width:50%;
+   margin:100px auto;
+   display: flex;
+   justify-content: center;
+   display:flex;
+}
+#skills h1{
+   padding-left: 25%;
+ }
+.box{
+   width: 48%;
+   height: 120px;
+   margin:0px 10px;
+   margin-bottom: 45px;
+   border-radius: 10%;
+}
+}
